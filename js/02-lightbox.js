@@ -21,4 +21,13 @@ const lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
   enableKeyboard: true,
+  overlay: true,
+  overlayOpacity: 0.8,
+  nav: true,
+  preloading: false,
+  animationSlide: true,
+  docClose: true,
+  scaleImageToRatio: true,
+  disableScroll: true,
+
 });
