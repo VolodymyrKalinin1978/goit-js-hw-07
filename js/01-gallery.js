@@ -21,6 +21,9 @@ const imagesGalery = galleryItems
 
 function clickOnGallery(event) {
   event.preventDefault();
+  if (event.target.nodeName !== 'IMG') {
+    return;
+  }
   let dataSourceImg = event.target.dataset.source;
 
   onOpenModal(dataSourceImg);
